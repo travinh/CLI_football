@@ -25,7 +25,16 @@ class Competition
         @@all.each do |competition|
             puts "ID: #{competition.id}"
             puts "Name: #{competition.name}"
-            puts "Area: #{competition.area}"
+            puts "Area ID: #{competition.area[:id]}"
+            puts "Area Name: #{competition.area[:name]}"
+            puts "Area Country Code: #{competition.area[:countryCode]}"
+            
+            puts "Area URL: #{competition.area[:ensignUrl] == nil ? "None" : competition.area[:ensignUrl]}"
+            # puts "Area: #{competition.area}"
+            
+
+
+
             puts ""
         end
     end

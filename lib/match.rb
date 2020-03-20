@@ -5,9 +5,9 @@ class Match
     @@all =[]
 
 
-    def initialize(id,competion,status)
+    def initialize(id,competition,status)
         @id =id 
-        @competion = competion 
+        @competition = competition 
         @status = status 
         @@all << self if !@@all.include?(self)
 
